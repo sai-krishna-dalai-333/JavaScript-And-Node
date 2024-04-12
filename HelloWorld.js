@@ -37,10 +37,12 @@ for (let i = 0; i < 5; i++) {
     console.log(i);
 }
 
-// void function()
-// {
-//     console.log("Hello World");
-// }() // Added parentheses to invoke the function
+
+//immediately invoked function expression (IIFE)
+void function()
+ {
+     console.log("Hello World");
+}() // Added parentheses to invoke the function
 
 
 /*In JavaScript, you don't need a main method 
