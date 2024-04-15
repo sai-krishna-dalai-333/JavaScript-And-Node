@@ -40,5 +40,52 @@ console.log("salary" in person2); // Outputs: false
 console.log(person2.hasOwnProperty("age")); // Outputs: true
 console.log(person1.hasOwnProperty("salary")); // Outputs: false
 
+//toString() method
+//1. It is used to convert an object to a string.
+//example 1
+
+let array =[1,'saikrishna','dalai',2263041,'centrica'];
+console.log(array.toString()); // Outputs: 1,saikrishna,dalai,2263041,centrica
+
+//example 2
+
+// if you want convert object to string then use toString() method then it will return [object Object]
+let person3 = {
+    firstName: "krishna",
+    lastName: "Dalai",
+    age: 22,
+    
+};
+
+console.log(person3.toString()); // Outputs: [object Object]
+
+
+//example 2
+//you need to override the toString() method to return the desired output.
+let person4 = {
+    firstName: "krishna",
+    lastName: "Dalai",
+    age: 22,
+    toString: function() {
+        return this.firstName + " " + this.lastName;
+    }
+};
+
+console.log(person4.toString()); // Output : krishna Dalai
+
+//conversion of string into number 
+//1. by number constructor
+let num = Number("123");
+console.log(num); // Outputs: 123
+
+//2. by parseInt() method
+let str = "123456asdd";
+let num2 =parseInt(str);
+console.log(num2); // Outputs: 123456
+
+
+//property attributes
+
+
 
 
