@@ -29,4 +29,16 @@ let person1 = new Person("krishna ", "Dalai", 22);
 let person2 = new Person("Sai", "krishna", 21);
 
 console.log(person1.fullName()); // Outputs: krishna Dalai
-console.log(person2.fullName()); // Outputs: 
+console.log(person2.fullName()); // Outputs: Sai krishna
+
+//Ways to check whether a property exists in an object
+//1.Using "IN" keyword
+console.log("firstName" in person1); // Outputs: true
+console.log("salary" in person2); // Outputs: false
+
+//2.Using "hasOwnProperty" method
+console.log(person2.hasOwnProperty("age")); // Outputs: true
+console.log(person1.hasOwnProperty("salary")); // Outputs: false
+
+
+
