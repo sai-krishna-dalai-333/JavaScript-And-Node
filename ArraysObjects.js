@@ -117,3 +117,8 @@ let values = Object.values(obj);
 console.log(values); // Outputs: ["krishna Dalai", 22, 2263041, "Chennai"]
 
 
+//delete property from an object in js
+//delete obj.clientName;
+delete obj["clientName"];
+
+console.log(obj); // Outputs: undefined
