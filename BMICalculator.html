@@ -1,0 +1,41 @@
+<!--This is an example for the Document Object Model in Js 
+Refers to Html Document.
+document.getElementById() to access the attribute value from the form
+document.formname.attr_name.value is also way to access
+-->
+
+
+
+<!DOCTYPE html>
+    <body>
+        <h1>BMI Calcualtor</h1>
+        <form id="form1">
+            <label for="height">Height in Meters :</label><br>
+            <input type="number"  id="height">
+            <br><br>
+            <label for="weight">Weight in kgs :</label><br>
+            <input type="number"  id="weight">
+            <br><br>
+            <button type="button"  onclick="bmiCalculator()">Calculate</button>
+        </form>
+        <br>
+        <div id="result" class="result"></div>
+    </body>
+
+    <script>
+      function bmiCalculator()
+      {
+         const height = parseFloat(document.getElementById("height").value);
+         const weight =parseFloat(document.getElementById("weight").value);
+         console.log(height);
+         console.log(weight);
+         const res = weight/((height)*(height));
+         
+         console.log(res);
+         alert("the bmi is "+ res.toFixed(2));
+         const resCont = document.getElementById("result");
+         resCont.textContent='Your BMI is  ' + res.toFixed(2);
+         
+      }
+    </script>
+</html>

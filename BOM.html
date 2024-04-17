@@ -1,0 +1,43 @@
+<html>
+    <body>
+        <input type="button" value="clickForAlert" onclick="alertButton()">
+        <input type="button" value="clickToConfirm" onclick="confirmButton()">
+        <input type="button" value="Prompt" onclick="promptButton()">
+        <input type="button" value="1C" onclick="openButton()">
+
+    </body>
+
+    <script>
+        //woindow function to give alert 
+        function alertButton(){
+        alert("Browser Alertting you....");
+        }
+
+         //confirm function is used to give yes or no
+        function confirmButton(){
+        let v = confirm("Are you sure?");
+        if(v==true)
+        {
+            alert("Ok...");
+        }
+        else{
+            alert("Not OK!!");
+        }
+        }
+        
+        //prompt function is used to give input filed to enter 
+        function promptButton()
+        {
+            let c = prompt("What is your name??");
+            alert("His name is "+c);
+        }
+        
+        //open new window
+        function openButton()
+        {
+            open("https://onecognizant.cognizant.com/Home?GlobalAppId=926?GlobalAppId=926?GlobalAppId=926?GlobalAppId=926?GlobalAppId=926?GlobalAppId=926?GlobalAppId=926?GlobalAppId=926");
+        }
+
+
+    </script>
+</html>
