@@ -9,6 +9,8 @@ class student{
      }
 }
 
+
+
 student.prototype.display =function()
 {
     console.log(this.id +"    "+ this.name);
@@ -16,4 +18,7 @@ student.prototype.display =function()
 
 s = new student(1,"sai");
 s.display();
-
+s2= new additionalDetails("bobbili",9110713691);
+console.log(s2);
+console.log("......");
+//INC00407370....9
