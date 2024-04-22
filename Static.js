@@ -36,4 +36,21 @@ let  ob = new ConsDemo();
 //when  i created an object the constructor called and intialized the object.
 
 
+//if there are multiple static methods of same name then last one is going to invoke
+
+class Similar
+{
+    static show()
+    {
+        console.log("First  static one");
+    }
+    static show()
+    {
+      console.log("Last static one");
+    }
+}
+
+Similar.show();
+
+
 
