@@ -31,6 +31,6 @@ console.log(obj1);
 
 let e = new Object();
 e.id=12;
-e.name ="dalai";
+e.name ="dalai";                                                                                                                                             
 e.peoject="centrica";
 console.log(e);
