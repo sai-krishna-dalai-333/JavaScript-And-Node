@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+//import { useState } from 'react';
+//import ShoppingList from './Second';
+
+import ParentProp from "./Components/ParentProp";
+//import PropComp from "./Components/PropComp";
+import StateComp from "./Components/StateComp";
+//import StateComp from "./Components/StateComp";
+
+ function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <StateComp />
+      
+      <ParentProp />
     </div>
   );
 }
